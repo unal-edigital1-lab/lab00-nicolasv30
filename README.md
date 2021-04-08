@@ -32,3 +32,6 @@ Una vez creado el archivo, siguiendo los liniamentos de la guia en primera insta
     
     endmodule
 
+Podemos notar como en el codigo se tienen las entradas (input) y las salidas (output), asi como la instanciacion de las compuertas logicas (AND, OR Y XOR), presentes en el esquematico elaborado a partir de la simplificacion de las expresiones del algebra booleana extraidas de la tabla de verdad. Es por esto que se utiliza el componente de tipo wire, que cumple la funcion de realizar las conexiones entre las compuertas anteriormente definidas.
+Se habia mencionado que este sumador era de la forma primitiva, debido a que existe una manera un poco mas general de trabajar con circuitos combinacionales. Esta manera fue con la que se trabajo en el Quartus, resultando el modulo de la siguiente manera.
+![Screenshot](Codigo1.png)
