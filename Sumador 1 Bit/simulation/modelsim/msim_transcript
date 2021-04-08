@@ -1,0 +1,65 @@
+# Reading pref.tcl
+# do Sum1bit_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador\ 1\ Bit {C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit/Sum1bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:45:58 on Apr 08,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit" C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit/Sum1bit.v 
+# -- Compiling module Sum1bit
+# 
+# Top level modules:
+# 	Sum1bit
+# End time: 15:45:58 on Apr 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador\ 1\ Bit {C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit/Sum1bit_TB.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:45:58 on Apr 08,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit" C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit/Sum1bit_TB.v 
+# -- Compiling module Sum1bit_TB
+# 
+# Top level modules:
+# 	Sum1bit_TB
+# End time: 15:45:58 on Apr 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  Sum1bit_TB
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" Sum1bit_TB 
+# Start time: 15:45:58 on Apr 08,2021
+# Loading work.Sum1bit_TB
+# Loading work.Sum1bit
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Error: (vsim-PLI-3536) $dumpvars() : The level argument (-1) must not be negative.    : C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit/Sum1bit_TB.v(29)
+#    Time: 0 ps  Iteration: 0  Instance: /Sum1bit_TB
+# ** Note: $finish    : C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit/Sum1bit_TB.v(30)
+#    Time: 200 ps  Iteration: 0  Instance: /Sum1bit_TB
+# 1
+# Break in NamedBeginStat TEST_CASE at C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit/Sum1bit_TB.v line 30
+add wave -position insertpoint  \
+sim:/Sum1bit_TB/x \
+sim:/Sum1bit_TB/y \
+sim:/Sum1bit_TB/c \
+sim:/Sum1bit_TB/out
+add wave -position insertpoint  \
+sim:/Sum1bit_TB/x \
+sim:/Sum1bit_TB/y \
+sim:/Sum1bit_TB/c \
+sim:/Sum1bit_TB/out \
+sim:/Sum1bit_TB/z
+# End time: 17:59:04 on Apr 08,2021, Elapsed time: 2:13:06
+# Errors: 1, Warnings: 0

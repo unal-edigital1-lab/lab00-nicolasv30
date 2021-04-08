@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit/simulation/modelsim
+vSum1bit
+Z1 !s110 1617911158
+!i10b 1
+!s100 nGYA@AI2k;;4XCiEa7d<G1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I]o_ZahEXgz2aGXeR]O1Hf3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1617909387
+8C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit/Sum1bit.v
+FC:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit/Sum1bit.v
+!i122 0
+L0 1 18
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1617911158.000000
+!s107 C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit/Sum1bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit|C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit/Sum1bit.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit}
+Z8 tCvgOpt 0
+n@sum1bit
+vSum1bit_TB
+R1
+!i10b 1
+!s100 K4a0UP=6F9>4Uf0f5PnZP3
+R2
+Ihna6E>J7Rc4o;T:iXQ7[k1
+R3
+R0
+w1617911037
+8C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit/Sum1bit_TB.v
+FC:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit/Sum1bit_TB.v
+!i122 1
+L0 1 33
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit/Sum1bit_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit|C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit/Sum1bit_TB.v|
+!i113 1
+R6
+R7
+R8
+n@sum1bit_@t@b

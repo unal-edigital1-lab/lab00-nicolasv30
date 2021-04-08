@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador\ 1\ Bit {C:/Users/nicov/OneDrive/Documents/GitHub/lab00-nicolasv30/Sumador 1 Bit/Sum1bit.v}
+
