@@ -34,17 +34,28 @@ Una vez creado el archivo, siguiendo los lineamentos de la guía en primera inst
 
 Podemos notar como en el código se tienen las entradas (input) y las salidas (output), así como la instanciación de las compuertas lógicas (AND, OR Y XOR), presentes en el esquemático elaborado a partir de la simplificación de las expresiones del algebra booleana extraídas de la tabla de verdad. Es por esto que se utiliza el componente de tipo wire, que cumple la función de realizar las conexiones entre las compuertas anteriormente definidas.
 Se había mencionado que este sumador era de la forma primitiva, debido a que existe una manera un poco más general de trabajar con circuitos combi nacionales. Esta manera fue con la que se trabajó en el Quartus, resultando el módulo de la siguiente manera.
-![Screenshot](codigo1.png)
+
+![Screenshot](Codigo1.png)
+
 Como se puede observar en el código, la diferencia con el anterior sumador primitivo radica en que cuenta con un reg de 2 bits, así como unas asignaciones (assign) para ambas salidas teniendo en cuenta el bit menos significativo, ademas de incluir un bloque always, al cual se le definen las entradas. En este caso fue usado `always @ (*)`, donde `*` representan todas las entradas del módulo. Y dentro del bloque always es definida la sentencia.
 
 Posteriormente a esto es necesario realizar la configuración del path del simulador en Quartus. Esto se realiza mediante las opciones de Quartus (EDA Tool Options) donde se verifica que el directorio especificado para el ModelSim-Altera sea el correcto.
-![Screenshot](config1.png)
+
+![Screenshot](config.png)
+
 Lo que se realizó después consiste en configurar el banco de pruebas para la simulación (TestBench). Para esto fue necesario la creación de un nuevo archivo:
+
 ![Screenshot](modulo.png)
+
 Modulo que corresponde a la creación del TestBench, donde para cada entrada se asigna un bloque `reg`  y para las salidas la conexión `wire`. Podemos apreciar el resultado de este banco de pruebas y de la simulación en general en la siguiente figura:
+
 ![Screenshot](simu1.png)
+
 Gracias al TestBench es posible visualizar en primera instancia los 8 posibles resultados que tendremos a la salida. Estos resultados se pueden comprobar teniendo en cuenta la tabla de verdad y comparándola con lo entregado en la simulación.
+
 ![Screenshot](tabla.png)
+
 Por ejemplo se comprueba lo representado en la tercera fila de la tabla de verdad, donde A=0, B=1 y Cin=0.
+
 ![Screenshot](simu2.png)
 
